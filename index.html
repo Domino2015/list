@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		html,body{margin:10px 300px;background: #ddd;}
+		.point{width:400px;}
+		.point h4{	background:#999;cursor:pointer;height:50px;line-height:50px;text-align:center;}
+	</style>
+</head>
+<body>
+<div class="point">
+	<h4>可以使用哪些方式支付1</h4>
+	<div style="display:none">
+		<p>(1) PC用户可以使用快捷支付（信用卡/储蓄卡）、支付宝、网上银行、微信等方式支付。</p>
+		<p>(2) M站用户可以使用快捷支付（信用卡/储蓄卡）、支付宝方式支付。</p>
+	</div>
+</div>
+<div class="point">
+	<h4>可以使用哪些方式支付22</h4>
+	<div style="display:none">
+		<p>(1) PC用户可以使用快捷支付（信用卡/储蓄卡）、支付宝、网上银行、微信等方式支付。</p>
+		<p>(2) M站用户可以使用快捷支付（信用卡/储蓄卡）、支付宝方式支付。</p>
+	</div>
+</div>
+<div class="point">
+	<h4>可以使用哪些方式支付333</h4>
+	<div style="display:none">
+		<p>(1) PC用户可以使用快捷支付（信用卡/储蓄卡）、支付宝、网上银行、微信等方式支付。</p>
+		<p>(2) M站用户可以使用快捷支付（信用卡/储蓄卡）、支付宝方式支付。</p>
+	</div>
+</div>
+<div class="point">
+	<h4>可以使用哪些方式支付4444</h4>
+	<div style="display:none">
+		<p>(1) PC用户可以使用快捷支付（信用卡/储蓄卡）、支付宝、网上银行、微信等方式支付。</p>
+		<p>(2) M站用户可以使用快捷支付（信用卡/储蓄卡）、支付宝方式支付。</p>
+	</div>
+</div>
+</body>
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script language="javascript">
+	$('.point h4').click(function(){
+		$(this).siblings().toggle();
+		$(this).parent().siblings().find("div").hide();
+	});
+</script>
+</html>
